@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 public class S08Ejercicio56 {
 
   public static void main(String[] args) {
@@ -14,6 +15,18 @@ public class S08Ejercicio56 {
     
     for (int numero : corteza(a)) {
       System.out.print(numero + " ");
+=======
+import java.util.Scanner;
+public class main{
+    public static void main(String [] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Este programa dibuja una piramide");
+	// Creacion de variables
+	int alt = sc.nextInt();
+	int e = alt -1;
+	int s = 0;
+	int cont = 1;
+>>>>>>> 5744c28baae1a5561479c6df6e395fb60b6e3ca4
     }
   }
 
