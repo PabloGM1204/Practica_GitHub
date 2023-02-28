@@ -47,5 +47,17 @@ public class S08Ejercicio56 {
     }
     return resultado;
   }
-  
+    //Este método muestras arrays
+  public static void muestraArrayBiInt(int x[][]) {
+    // El tamaño de la columna será igual al tamaño del número máximo del array
+    String formatoNumero = "%" + matematicas.Varias.digitos(maximoArrayBiInt(x)) + "d";
+
+    for (int f = 0; f < x.length; f++) {
+      for (int c = 0; c < x[0].length; c++) {
+        System.out.printf(formatoNumero + " ", x[f][c]);
+      }
+      System.out.println();
+    }
+  }
 }
+
