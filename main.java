@@ -2,22 +2,28 @@
 public class S08Ejercicio56 {
 
   public static void main(String[] args) {
+    // Creo el arrayBidimensional
     int[][] a = {
       {45, 92, 14, 20, 25, 78},
       {35, 72, 24, 45, 12, 60},
       {32, 42, 69, 23, 31, 39},
       {98, 45, 94, 11, 18, 48}
     };
-    
-    ArrayBi.muestraArrayBiInt(a);
-    
+    // Funcion que muestra el array
+    muestraArrayBiInt(a);
+
     System.out.print("\ncorteza: ");
     
-    for (int numero : corteza(a)) {
-      System.out.print(numero + " ");
+    bucle(a);
+  }
+  // Metodo que muestra el resultado
+  private static void bucle(int [][] n){
+     for(int numero : corteza(n)){
+        System.out.print(numero + " ");
     }
   }
 
+  // Metodo que elimina el borde
   private static int[] corteza(int[][] n) {
     int filas = n.length;
     int columnas = n[0].length;
@@ -47,8 +53,8 @@ public class S08Ejercicio56 {
     }
     return resultado;
   }
-    //Este método muestras arrays
-  public static void muestraArrayBiInt(int x[][]) {
+  //Este método muestras arrays
+  private static void muestraArrayBiInt(int x[][]) {
     // El tamaño de la columna será igual al tamaño del número máximo del array
     String formatoNumero = "%" + matematicas.Varias.digitos(maximoArrayBiInt(x)) + "d";
 
