@@ -13,7 +13,7 @@ public class S08Ejercicio56 {
     // Funcion que muestra el array
     muestraArrayBiInt(a);
 
-    System.out.print("\ncorteza: ");
+    System.out.print("Limpieza de borde");
     
     bucle(a);
   }
