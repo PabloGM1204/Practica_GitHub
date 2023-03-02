@@ -2,6 +2,7 @@
 public class S08Ejercicio56 {
 
   public static void main(String[] args) {
+    hola();
     // Creo el arrayBidimensional
     int[][] a = {
       {45, 92, 14, 20, 25, 78},
@@ -57,13 +58,16 @@ public class S08Ejercicio56 {
   private static void muestraArrayBiInt(int x[][]) {
     // El tamaño de la columna será igual al tamaño del número máximo del array
     String formatoNumero = "%" + matematicas.Varias.digitos(maximoArrayBiInt(x)) + "d";
-
+    // Este bucle recorre todo
     for (int f = 0; f < x.length; f++) {
       for (int c = 0; c < x[0].length; c++) {
         System.out.printf(formatoNumero + " ", x[f][c]);
       }
       System.out.println();
     }
+  private static void hola(){
+    System.out.print("Hola que tal");
+  }
   }
 }
 
