@@ -3,10 +3,10 @@ public class S08Ejercicio56 {
 
   public static void main(String[] args) {
     int[][] a = {
-      {45, 92, 14, 20, 25, 78},
+      {45, 92, 13, 20, 25, 78},
       {35, 72, 24, 45, 12, 60},
-      {32, 42, 69, 23, 31, 39},
-      {98, 45, 94, 11, 18, 48}
+      {32, 42, 69, 23, 31, 29},
+      {99, 45, 94, 11, 18, 48}
     };
     
     ArrayBi.muestraArrayBiInt(a);
