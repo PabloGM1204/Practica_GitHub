@@ -5,8 +5,8 @@ public class S08Ejercicio56 {
     hola();
     // Creo el arrayBidimensional
     int[][] a = {
-      {45, 92, 13, 20, 25, 78},
-      {35, 72, 24, 45, 12, 60},
+      {20, 18, 10, 13, 70, 50},
+      {80, 87, 60, 89, 75, 43},
       {32, 42, 69, 23, 31, 29},
       {99, 45, 94, 11, 18, 48}
     };
@@ -26,7 +26,9 @@ public class S08Ejercicio56 {
 
   // Metodo que elimina el borde
   private static int[] corteza(int[][] n) {
+    // Array ayudante
     int filas = n.length;
+    // Creacion del array cogiendo la longitud
     int columnas = n[0].length;
     
     int[] resultado = new int[2 * filas + 2 * columnas - 4];
@@ -66,7 +68,7 @@ public class S08Ejercicio56 {
       System.out.println();
     }
   private static void hola(){
-    System.out.print("Hola que tal");
+    System.out.print("Este es tu nuevo programa");
   }
   }
 }
