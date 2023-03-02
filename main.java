@@ -5,15 +5,16 @@ public class S08Ejercicio56 {
     hola();
     // Creo el arrayBidimensional
     int[][] a = {
-      {45, 26, 13, 20, 25, 78},
-      {35, 72, 24, 45, 12, 60},
-      {20, 18, 10, 13, 70, 50},
-      {80, 87, 60, 89, 75, 43},
+      {44, 26, 13, 20, 25, 78},
+      {36, 72, 24, 45, 12, 61},
+      {20, 18, 12, 14, 70, 50},
+      {89, 87, 60, 89, 65, 23},
     };
     // Funcion que muestra el array
     muestraArrayBiInt(a);
 
-    System.out.print("Limpieza de borde");
+
+    System.out.print("Superficie");
     
     bucle(a);
   }
